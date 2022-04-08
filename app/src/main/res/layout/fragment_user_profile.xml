@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.userprofile.UserProfileFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:text="@string/profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+                app:layout_constraintStart_toEndOf="@+id/iv_back"
+                app:layout_constraintTop_toTopOf="@+id/iv_back" />
+
+            <View
+                android:id="@+id/view_line_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/search_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/_124sdp"
+                android:layout_height="@dimen/_124sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:src="@drawable/user_profile_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_line_toolbar" />
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+                tools:text="Sarah Joy" />
+
+            <TextView
+                android:id="@+id/tv_contact_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+49 172 862045"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile_name" />
+
+            <View
+                android:id="@+id/view_line_profile"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:background="@color/search_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_contact_no" />
+
+            <TextView
+                android:id="@+id/tv_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_line_profile" />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Dreaming"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_edit_info"
+                app:layout_constraintStart_toStartOf="@+id/tv_info_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_info_title" />
+
+            <ImageView
+                android:id="@+id/iv_edit_info"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:src="@drawable/ic_pen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_info" />
+
+            <View
+                android:id="@+id/view_line_info"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:background="@color/search_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_info" />
+
+            <TextView
+                android:id="@+id/tv_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_line_info" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sarah Joy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_edit_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_name_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_title" />
+
+            <ImageView
+                android:id="@+id/iv_edit_name"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:src="@drawable/ic_pen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+            <View
+                android:id="@+id/view_line_name"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:background="@color/search_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

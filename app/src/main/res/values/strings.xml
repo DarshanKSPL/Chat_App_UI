@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chat App UI</string>
+    <string name="search">Search</string>
+    <string name="stories">Stories</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="info">Info</string>
+    <string name="name">Name</string>
+</resources>
